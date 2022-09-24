@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Login RedStore |</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+  <link rel="shortcut icon" href="login.png" type="image/x-icon">
+</head>
+<body>
+
+
+ <div class="container">
+
+  <div class="navbar">
+    <div class="logo">
+    <a href="index.html"><img src="images/logo.png" width="125px"></a>
+    </div>
+    <nav>
+      <ul id="MenuItens">
+        <li><a href="index.html">Principal</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="">Sobre</a></li>
+        <li><a href="">Contato</a></li>
+        <li><a href="account.html">Conta</a></li>
+      </ul>
+    </nav>
+    <a href="cart.html"><img src="images/cart.png" width="25px" height="25px" ></a>
+    <img src="images/menu.png" class="menu-icon" onclick="menu()">
+  </div>
+ </div>
+
+<!---LOGIN-->
+<div class="account-pag">
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+        <img src="images/image1.png" width="100%">
+      </div>
+      <div class="col-2">
+        <div class="form-login">
+          <div class="form-bt">
+            <span  onclick="login()">Login</span>
+            <span  onclick="register()">Cadastro</span>
+            <hr id="Indicador">
+          </div>
+
+          <form  id="LoginForm">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Digite sua senha">
+            <button type="submit" class="btn">LOGIN</button>
+            <a href=""> Esqueceu a senha</a>
+          </form>
+
+          <form id="RegForm" >
+            <input type="text" placeholder="Digite um Username">
+            <input type="e-mail" placeholder="Digite seu e-mail">
+            <input type="password" placeholder="Digite uma senha">
+            <button type="submit" class="btn">CADASTRE-SE</button>
+           </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!--RODApÉ-->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col1">
+          <h3> Baixe o nosso App!</h3>
+          <p>Disponível para  celulares Android e iOS</p>
+          <div class="app-logo">
+            <img src="images/play-store.png" alt="Logo PlayStore">
+            <img src="images/app-store.png" alt="Logo AppleStore">
+
+          </div>
+        </div>
+        <div class="footer-col2">
+          <img src="images/logo-white.png" alt="logo da empresa">
+          <p><italic>Nosso Propósito é Sustentavelmente fazer com que o prazer e os beneficios do Esporte cheguem a mais pessoas!</italic></p>
+        </div>
+        <div class="footer-col3">
+          <h3> Links Uteis</h3>
+          <ul> 
+            <li>Cupons</li>
+            <li>Posts do Blog</li>
+            <li>Nossas Políticas</li>
+            <li>Torne-se um Afiliado</li>
+          </ul>
+       </div>
+       <div class="footer-col4">
+        <h3>Nos siga em nossas Redes Socais:</h3>
+        <ul>
+          <li>Facebool</li>
+          <li>LinkedIN</li>
+          <li>Instagram</li>
+          <li>YouTube</li>
+        </ul>
+       </div>
+      </div>
+      <hr>
+      <p class="copyrights"> Copyright 2022 - Tutorial </p>
+    </div>
+    
+  </div>
+ 
+  <script>
+    var LoginForm= document.getElementById("LoginForm");
+var RegForm = document.getElementById("RegForm");
+var Ind = document.getElementById("Indicador");
+
+function register()
+{
+  RegForm.style.transform = "translateX(0px)";
+  LoginForm.style.transform = "translateX(0px)";
+  Ind.style.transform="translateX(162px)";
+}
+
+function login()
+{
+  RegForm.style.transform = "translateX(300px)";
+  LoginForm.style.transform = "translateX(300px)";
+  Ind.style.transform="translateX(55px)";
+}
+  </script>
+  
+</body>
+</html>
